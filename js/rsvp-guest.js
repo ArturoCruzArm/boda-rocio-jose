@@ -64,7 +64,7 @@
         const textEl   = document.getElementById('guestWelcomeText');
         const pasesEl  = document.getElementById('guestPassesText');
         if (section && textEl && pasesEl) {
-            textEl.textContent = `${g.nombre}, est\u00e1s cordialmente invitado(a) a celebrar mis XV a\u00f1os`;
+            textEl.textContent = g.nombre;
             pasesEl.innerHTML  = `<i class="fas fa-ticket-alt"></i> ${g.pases_asignados} ${g.pases_asignados === 1 ? 'pase asignado' : 'pases asignados'}`;
             section.style.display = 'block';
         }
@@ -110,7 +110,7 @@
         rsvpSection.innerHTML = `
             <div style="text-align:center;padding:40px 20px;background:rgba(255,255,255,0.05);border-radius:20px;border:2px solid var(--gold);">
                 <div style="font-size:3rem;margin-bottom:16px;">${asiste ? '\uD83C\uDF89' : '\uD83D\uDC8C'}</div>
-                <h2 style="color:var(--gold);font-family:'Playfair Display',serif;margin-bottom:12px;">
+                <h2 style="color:var(--gold-lt);font-family:'Cormorant Garamond',serif;margin-bottom:12px;">
                     ${asiste ? '\u00a1Ya confirmaste tu asistencia!' : 'Gracias por avisarnos'}
                 </h2>
                 <p style="color:var(--cream);font-size:1.1rem;margin-bottom:8px;">

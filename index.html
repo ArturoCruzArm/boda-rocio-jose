@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Boda de Rocío &amp; José · 4 de diciembre de 2026</title>
     <meta name="description" content="Rocío y José se casan el 4 de diciembre de 2026. Consulta el itinerario, los detalles del evento y confirma tu asistencia.">
-    <meta name="theme-color" content="#241b2e">
+    <meta name="theme-color" content="#4f6049">
 
     <!-- Vista previa al compartir en WhatsApp / Facebook -->
     <meta property="og:type" content="website">
@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="image" href="imagenes/foto1.webp">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@400;500;600&family=Oooh+Baby&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
@@ -32,25 +32,26 @@
 </head>
 <body>
 
-<!-- ══ Intro cinemática ══ -->
-<div id="intro-overlay" role="presentation" aria-hidden="true">
-    <div class="intro-bar top"></div>
-    <div class="intro-bar bottom"></div>
-    <div class="intro-content">
-        <p class="intro-studio">Producciones Foro 7</p>
-        <p class="intro-presents">presenta</p>
-        <div class="intro-line"></div>
-        <h1 class="intro-name">Rocío &amp; José</h1>
-        <p class="intro-tag">Nuestra boda</p>
+<!-- ══ Sobre de boda ══ -->
+<div id="intro-overlay" role="button" tabindex="0" aria-label="Abrir la invitación">
+    <p class="intro-eyebrow">Una invitación para compartir nuestro sí</p>
+    <div class="wedding-envelope" aria-hidden="true">
+        <span class="envelope-back"></span>
+        <span class="envelope-card"><small>Nos casamos</small><strong>R <i>&amp;</i> J</strong><em>04 · 12 · 26</em></span>
+        <span class="envelope-flap"></span>
+        <span class="envelope-front"></span>
+        <span class="wedding-seal"><b>RJ</b></span>
+        <img src="imagenes/boda/flores-blancas-olivo.png" alt="">
     </div>
-    <p class="intro-skip">Toca para continuar</p>
+    <p class="intro-skip">Toca el sello para abrir</p>
 </div>
 
 <!-- ══ Portada ══ -->
 <header class="hero">
     <img class="hero-photo" src="imagenes/foto1.webp" alt="Rocío y José" width="1080" height="1440" fetchpriority="high">
+    <img class="hero-floral" src="imagenes/boda/flores-blancas-olivo.png" alt="" aria-hidden="true">
     <div class="hero-inner">
-        <p class="hero-kicker">Nos casamos</p>
+        <p class="hero-kicker">Con la bendición de Dios</p>
         <p class="hero-names">Rocío<span class="hero-amp">&amp;</span>José</p>
         <p class="hero-date">Viernes 4 · Diciembre · 2026</p>
         <p class="hero-place">León, Guanajuato</p>
@@ -60,25 +61,37 @@
 
 <div class="container">
 
+    <!-- ══ Bienvenida personalizada ══ -->
+    <section class="personalized-welcome" id="personalizedWelcome" style="display:none" aria-live="polite">
+        <p class="welcome-label">Esta invitación es especialmente para</p>
+        <h2 id="guestWelcomeText"></h2>
+        <p class="welcome-passes" id="guestPassesText"></p>
+    </section>
+
     <!-- ══ Cita ══ -->
-    <section>
+    <section class="photo-article story-article">
+        <figure class="section-photo"><img src="imagenes/foto2.webp" alt="Rocío y José compartiendo un momento juntos" loading="lazy"><figcaption>El comienzo de nuestro para siempre</figcaption></figure>
+        <div class="article-copy">
+        <p class="article-label"><i class="fas fa-ring"></i> Camino al altar</p>
         <p class="quote">
             <span class="quote-mark">&ldquo;</span>
-            Después de caminar juntos tanto tiempo, hoy decidimos hacerlo para siempre.
-            Nos encantaría que estuvieras con nosotros el día en que decimos <em>sí</em>.
-        </p>
+            Después de caminar juntos, elegimos unir nuestras vidas ante Dios.
+            Queremos que seas testigo del día en que prometemos amarnos y acompañarnos <em>para siempre</em>.
+        </p></div>
     </section>
 
     <!-- ══ Cuenta regresiva ══ -->
-    <section id="cuenta">
-        <h2 class="section-title"><i class="fas fa-hourglass-half"></i> Cuenta regresiva</h2>
+    <section id="cuenta" class="photo-article">
+        <figure class="section-photo"><img src="imagenes/foto3.webp" alt="Rocío y José durante su sesión de compromiso" loading="lazy"><figcaption>Viernes · 4 de diciembre · 2026</figcaption></figure>
+        <div class="article-copy">
+        <h2 class="section-title"><i class="fas fa-hourglass-half"></i> Rumbo a nuestro sí</h2>
         <div class="section-rule"></div>
         <div class="countdown" id="countdown">
             <div class="cd-item"><span class="cd-value" id="days">00</span><span class="cd-label">Días</span></div>
             <div class="cd-item"><span class="cd-value" id="hours">00</span><span class="cd-label">Horas</span></div>
             <div class="cd-item"><span class="cd-value" id="minutes">00</span><span class="cd-label">Minutos</span></div>
             <div class="cd-item"><span class="cd-value" id="seconds">00</span><span class="cd-label">Segundos</span></div>
-        </div>
+        </div></div>
         <div class="btn-row">
             <button class="btn btn-ghost" id="btnCalendar"><i class="fas fa-calendar-plus"></i> Agregar a mi calendario</button>
         </div>
@@ -86,7 +99,7 @@
 
     <!-- ══ Galería ══ -->
     <section id="galeria">
-        <h2 class="section-title"><i class="fas fa-camera-retro"></i> Nosotros</h2>
+        <h2 class="section-title"><i class="fas fa-camera-retro"></i> Nuestro camino al altar</h2>
         <div class="section-rule"></div>
         <div class="gallery" id="gallery">
             <figure tabindex="0" data-full="imagenes/foto1.webp"><img src="imagenes/thumb/foto1.webp" alt="Rocío y José, foto 1" loading="lazy" decoding="async" width="300" height="400"></figure>
@@ -97,13 +110,15 @@
     </section>
 
     <!-- ══ Detalles ══ -->
-    <section id="detalles">
-        <h2 class="section-title"><i class="fas fa-map-marker-alt"></i> Dónde y cuándo</h2>
+    <section id="detalles" class="photo-article">
+        <figure class="section-photo church-art"><img src="imagenes/boda/iglesia-acuarela.png" alt="Ilustración en acuarela de la iglesia para la ceremonia" loading="lazy"><figcaption>Ante Dios y nuestras familias</figcaption></figure>
+        <div class="article-copy">
+        <h2 class="section-title"><i class="fas fa-church"></i> Ceremonia y recepción</h2>
         <div class="section-rule"></div>
         <div class="cards">
             <div class="card">
                 <div class="card-icon"><i class="fas fa-ring"></i></div>
-                <h3 class="card-title">Ceremonia</h3>
+                <h3 class="card-title">Ceremonia religiosa</h3>
                 <div class="card-row"><strong>Fecha</strong>Viernes 4 de diciembre de 2026</div>
                 <div class="card-row"><strong>Hora</strong>5:00 PM</div>
                 <div class="card-row"><strong>Lugar</strong><span class="tbd" data-campo="lugar-ceremonia">Por confirmar</span></div>
@@ -115,12 +130,14 @@
                 <div class="card-row"><strong>Hora</strong>7:30 PM &mdash; 1:00 AM</div>
                 <div class="card-row"><strong>Lugar</strong><span class="tbd" data-campo="lugar-recepcion">Por confirmar</span></div>
             </div>
-        </div>
+        </div></div>
     </section>
 
     <!-- ══ Itinerario ══ -->
-    <section id="itinerario">
-        <h2 class="section-title"><i class="fas fa-clock"></i> Itinerario</h2>
+    <section id="itinerario" class="photo-article">
+        <figure class="section-photo"><img src="imagenes/foto2.webp" alt="Rocío y José sonriendo juntos" loading="lazy"><figcaption>Una tarde para recordar</figcaption></figure>
+        <div class="article-copy">
+        <h2 class="section-title"><i class="fas fa-clock"></i> El día de nuestros votos</h2>
         <div class="section-rule"></div>
         <div class="timeline">
             <div class="tl-item"><p class="tl-time">5:00 PM</p><p class="tl-name">Ceremonia</p></div>
@@ -133,33 +150,39 @@
             <div class="tl-item"><p class="tl-time">9:00 PM</p><p class="tl-name">Cena</p></div>
             <div class="tl-item"><p class="tl-time">9:40 PM</p><p class="tl-name">Abrimos pista</p></div>
             <div class="tl-item"><p class="tl-time">1:00 AM</p><p class="tl-name">Fin del evento</p></div>
-        </div>
+        </div></div>
     </section>
 
     <!-- ══ Vestimenta ══ -->
-    <section id="vestimenta">
-        <h2 class="section-title"><i class="fas fa-user-tie"></i> Código de vestimenta</h2>
+    <section id="vestimenta" class="photo-article">
+        <figure class="section-photo"><img src="imagenes/foto3.webp" alt="Rocío y José elegantemente vestidos" loading="lazy"><figcaption>Formal · Elegante</figcaption></figure>
+        <div class="article-copy">
+        <h2 class="section-title"><i class="fas fa-user-tie"></i> Para acompañarnos al altar</h2>
         <div class="section-rule"></div>
         <div class="panel">
             <p class="panel-lead">Formal / Elegante</p>
             <p style="margin-top:14px;">Te pedimos acompañarnos con vestimenta formal para hacer de esta noche una ocasión especial.</p>
             <p class="tbd" data-campo="color-reservado">Color reservado de la novia: por confirmar</p>
-        </div>
+        </div></div>
     </section>
 
     <!-- ══ Regalos ══ -->
-    <section id="regalos">
-        <h2 class="section-title"><i class="fas fa-gift"></i> Mesa de regalos</h2>
+    <section id="regalos" class="photo-article">
+        <figure class="section-photo"><img src="imagenes/foto4.webp" alt="Rocío y José celebrando su compromiso" loading="lazy"><figcaption>El mejor regalo será compartirlo contigo</figcaption></figure>
+        <div class="article-copy">
+        <h2 class="section-title"><i class="fas fa-gift"></i> Bendiciones y regalos</h2>
         <div class="section-rule"></div>
         <div class="panel">
             <p class="panel-lead">Tu presencia es nuestro mejor regalo</p>
             <p style="margin-top:14px;" class="tbd" data-campo="mesa-regalos">Información de mesa de regalos: por confirmar</p>
-        </div>
+        </div></div>
     </section>
 
     <!-- ══ RSVP ══ -->
-    <section id="rsvp">
-        <h2 class="section-title"><i class="fas fa-envelope-open-text"></i> Confirma tu asistencia</h2>
+    <section id="rsvp" class="photo-article">
+        <figure class="section-photo"><img src="imagenes/foto1.webp" alt="Rocío y José esperando celebrar con sus invitados" loading="lazy"><figcaption>Nos encantará verte ahí</figcaption></figure>
+        <div class="article-copy">
+        <h2 class="section-title"><i class="fas fa-envelope-open-text"></i> Acompáñanos a decir sí</h2>
         <div class="section-rule"></div>
         <form class="rsvp-form" id="rsvpForm" novalidate>
             <div class="field">
@@ -191,25 +214,28 @@
         </form>
         <div class="rsvp-ok" id="successMessage">
             &#10003; ¡Gracias! Tu confirmación quedó registrada.
-        </div>
+        </div></div>
     </section>
 
     <!-- ══ Compartir ══ -->
-    <section id="compartir">
-        <h2 class="section-title"><i class="fas fa-share-alt"></i> Comparte la invitación</h2>
+    <section id="compartir" class="photo-article">
+        <figure class="section-photo"><img src="imagenes/foto2.webp" alt="Un recuerdo de Rocío y José" loading="lazy"><figcaption>Rocío &amp; José</figcaption></figure>
+        <div class="article-copy">
+        <h2 class="section-title"><i class="fas fa-share-alt"></i> Comparte nuestra alegría</h2>
         <div class="section-rule"></div>
         <p style="text-align:center; color:var(--lav);">Ayúdanos a compartirla con quienes queremos que nos acompañen.</p>
         <div class="share-icons">
             <a href="#" class="share-icon" data-share="whatsapp" title="Compartir por WhatsApp" aria-label="Compartir por WhatsApp"><i class="fab fa-whatsapp"></i></a>
             <a href="#" class="share-icon" data-share="facebook" title="Compartir en Facebook" aria-label="Compartir en Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="share-icon" data-share="copy" title="Copiar enlace" aria-label="Copiar enlace"><i class="fas fa-link"></i></a>
-        </div>
+        </div></div>
     </section>
 
 </div>
 
 <footer>
-    <p class="footer-hearts">¡Te esperamos!</p>
+    <img class="footer-floral" src="imagenes/boda/flores-blancas-olivo.png" alt="" aria-hidden="true">
+    <p class="footer-hearts">Rocío &amp; José</p>
     <div class="section-rule"></div>
     <p>Producciones Foro 7</p>
     <p>Fotografía, Video, Dron e Invitaciones Web</p>
@@ -225,6 +251,13 @@
     <img id="lbImage" src="" alt="">
 </div>
 
+<audio id="invitationMusic" preload="auto" loop>
+    <source src="audio/para-siempre-tu-y-yo.mp3" type="audio/mpeg">
+</audio>
+<button class="music-toggle" id="musicToggle" type="button" aria-label="Reproducir música" aria-pressed="false">
+    <i class="fas fa-volume-high"></i><span>Nuestra canción</span>
+</button>
+
 <script>
 (function () {
     'use strict';
@@ -232,6 +265,22 @@
     // ── Fecha del evento: viernes 4 de diciembre de 2026, 5:00 PM ──
     var EVENTO = new Date(2026, 11, 4, 17, 0, 0);
     var EVENTO_FIN = new Date(2026, 11, 5, 1, 0, 0);
+    var music = document.getElementById('invitationMusic');
+    var musicToggle = document.getElementById('musicToggle');
+    function setMusicState(playing) {
+        musicToggle.classList.toggle('is-playing', playing);
+        musicToggle.setAttribute('aria-pressed', String(playing));
+        musicToggle.setAttribute('aria-label', playing ? 'Pausar música' : 'Reproducir música');
+        musicToggle.querySelector('i').className = playing ? 'fas fa-volume-high' : 'fas fa-volume-xmark';
+    }
+    function startMusic() {
+        music.play().then(function () { setMusicState(true); }).catch(function () { setMusicState(false); });
+        musicToggle.classList.add('show');
+    }
+    musicToggle.addEventListener('click', function () {
+        if (music.paused) music.play().then(function () { setMusicState(true); });
+        else { music.pause(); setMusicState(false); }
+    });
 
     // ── Cuenta regresiva ──
     var elDays = document.getElementById('days'),
@@ -351,9 +400,11 @@
                 setTimeout(function () { overlay.style.display = 'none'; }, 1200);
                 try { localStorage.setItem('foro7_intro_rocio_jose', hoy); } catch (e) {}
             };
-            var auto = setTimeout(dismiss, 7000);
-            ['click', 'touchend'].forEach(function (ev) {
-                overlay.addEventListener(ev, function () { clearTimeout(auto); dismiss(); }, { passive: true });
+            overlay.addEventListener('click', function () { startMusic(); dismiss(); });
+            overlay.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault(); startMusic(); dismiss();
+                }
             });
         }
     }
