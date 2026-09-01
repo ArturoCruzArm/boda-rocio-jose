@@ -121,14 +121,22 @@
                 <h3 class="card-title">Ceremonia religiosa</h3>
                 <div class="card-row"><strong>Fecha</strong>Viernes 4 de diciembre de 2026</div>
                 <div class="card-row"><strong>Hora</strong>5:00 PM</div>
-                <div class="card-row"><strong>Lugar</strong><span class="tbd" data-campo="lugar-ceremonia">Por confirmar</span></div>
+                <div class="card-row"><strong>Lugar</strong>Parroquia de San Rafael Arcángel</div>
+                <div class="card-row"><strong>Dirección</strong>Blvd. Camino a Comanja #120<br>Balcones del Campestre, León, Gto.</div>
+                <div class="btn-row">
+                    <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Parroquia+de+San+Rafael+Arc%C3%A1ngel%2C+Blvd.+Camino+a+Comanja+120%2C+Balcones+del+Campestre%2C+Le%C3%B3n%2C+Gto." target="_blank" rel="noopener"><i class="fas fa-map-location-dot"></i> Cómo llegar</a>
+                </div>
             </div>
             <div class="card">
                 <div class="card-icon"><i class="fas fa-champagne-glasses"></i></div>
                 <h3 class="card-title">Recepción</h3>
                 <div class="card-row"><strong>Fecha</strong>Viernes 4 de diciembre de 2026</div>
                 <div class="card-row"><strong>Hora</strong>7:30 PM &mdash; 1:00 AM</div>
-                <div class="card-row"><strong>Lugar</strong><span class="tbd" data-campo="lugar-recepcion">Por confirmar</span></div>
+                <div class="card-row"><strong>Lugar</strong>Salones Valantains</div>
+                <div class="card-row"><strong>Dirección</strong>Blvd. Hilario Medina #3806<br>Real Providencia, León, Gto.</div>
+                <div class="btn-row">
+                    <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Salones+Valantains%2C+Blvd.+Hilario+Medina+3806%2C+Real+Providencia%2C+Le%C3%B3n%2C+Gto." target="_blank" rel="noopener"><i class="fas fa-map-location-dot"></i> Cómo llegar</a>
+                </div>
             </div>
         </div></div>
     </section>
@@ -140,9 +148,9 @@
         <h2 class="section-title"><i class="fas fa-clock"></i> El día de nuestros votos</h2>
         <div class="section-rule"></div>
         <div class="timeline">
-            <div class="tl-item"><p class="tl-time">5:00 PM</p><p class="tl-name">Ceremonia</p></div>
+            <div class="tl-item"><p class="tl-time">5:00 PM</p><p class="tl-name">Ceremonia</p><p class="tl-note">Parroquia de San Rafael Arcángel</p></div>
             <div class="tl-item"><p class="tl-time">6:00 PM</p><p class="tl-name">Sesión de fotos</p><p class="tl-note">Con luz de tarde, el mejor momento del día</p></div>
-            <div class="tl-item"><p class="tl-time">7:30 PM</p><p class="tl-name">Recepción</p></div>
+            <div class="tl-item"><p class="tl-time">7:30 PM</p><p class="tl-name">Recepción</p><p class="tl-note">Salones Valantains</p></div>
             <div class="tl-item"><p class="tl-time">8:00 PM</p><p class="tl-name">Coctel de bienvenida</p></div>
             <div class="tl-item"><p class="tl-time">8:15 PM</p><p class="tl-name">Entrada de los novios</p></div>
             <div class="tl-item"><p class="tl-time">8:30 PM</p><p class="tl-name">Brindis</p></div>
@@ -321,8 +329,8 @@
             'DTSTART:' + icsDate(EVENTO),
             'DTEND:' + icsDate(EVENTO_FIN),
             'SUMMARY:Boda de Rocio y Jose',
-            'DESCRIPTION:Ceremonia 5:00 PM - Recepcion 7:30 PM. Detalles: https://rocio-jose.invitados.org/',
-            'LOCATION:Leon, Guanajuato',
+            'DESCRIPTION:Ceremonia 5:00 PM en la Parroquia de San Rafael Arcangel. Recepcion 7:30 PM en Salones Valantains. Detalles: https://rocio-jose.invitados.org/',
+            'LOCATION:Parroquia de San Rafael Arcangel\\, Blvd. Camino a Comanja 120\\, Balcones del Campestre\\, Leon\\, Gto.',
             'END:VEVENT', 'END:VCALENDAR'
         ].join('\r\n');
         var url = URL.createObjectURL(new Blob([ics], { type: 'text/calendar;charset=utf-8' }));
